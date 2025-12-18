@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dala Manico Lueji de Carvalho | Apresentação Estratégica — Fundação Bornito de Sousa</title>
+    <meta name="description" content="Página institucional de apresentação estratégica — Arte, Ciência, Tecnologia e Impacto Social numa abordagem sistémica transdisciplinar." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        :root {
+            --accent-gold: #ffcc00;
+            --accent-orange: #ff6600;
+            --bg-dark: #0e0f13;
+            --card-bg: #151824;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #e6e6e6;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+        }
+
+        .btn-action {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-orange));
+            transition: all 0.3s ease;
+            color: #000;
+        }
+
+        .btn-action:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+        }
+
+        [data-lang="en"] { display: none; }
+        body.lang-en [data-lang="pt"] { display: none; }
+        body.lang-en [data-lang="en"] { display: block; }
+        
+        .nav-fixed {
+            backdrop-filter: blur(10px);
+            background: rgba(14, 15, 19, 0.8);
+        }
+    </style>
+</head>
+<body class="lang-pt">
+
+    <!-- Navegação / Seletor de Idioma -->
+    <nav class="nav-fixed fixed top-0 w-full z-50 py-4 px-6 border-b border-white/5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="font-bold tracking-tighter text-xl gradient-text">DMLC</div>
+            <div class="flex gap-4">
+                <button onclick="setLanguage('pt')" id="btn-pt" class="text-sm font-semibold opacity-100 hover:text-yellow-500 transition-colors">PT</button>
+                <span class="text-white/20">|</span>
+                <button onclick="setLanguage('en')" id="btn-en" class="text-sm font-semibold opacity-50 hover:text-yellow-500 transition-colors">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-20 px-6 text-center bg-[radial-gradient(circle_at_top,_#1c1f2a,_#0e0f13)]">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Dala Manico Lueji de Carvalho</h1>
+            <p class="text-xl md:text-2xl font-light text-gray-400 mb-8" data-lang="pt">Artista, Educador e Investigador Transdisciplinar | Angola</p>
+            <p class="text-xl md:text-2xl font-light text-gray-400 mb-8" data-lang="en">Artist, Educator, and Transdisciplinary Researcher | Angola</p>
+            <div class="h-1 w-24 bg-gradient-to-r from-yellow-500 to-orange-600 mx-auto rounded-full"></div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
+        
+        <!-- Apresentação Institucional -->
+        <section id="apresentacao" class="glass-card p-8 md:p-12 rounded-3xl">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="p-3 bg-yellow-500/10 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                </div>
+                <h2 class="text-2xl font-bold" data-lang="pt">Apresentação Institucional Dedicada</h2>
+                <h2 class="text-2xl font-bold" data-lang="en">Dedicated Institutional Presentation</h2>
+            </div>
+            
+            <div class="space-y-6 text-gray-300 leading-relaxed">
+                <p data-lang="pt">Esta página foi concebida como uma apresentação institucional dirigida à <strong>Fundação Bornito de Sousa</strong>, em reconhecimento à sua missão de promover diálogo, sinergias e melhores práticas entre a academia, a sociedade civil, o sector público e o sector privado.</p>
+                <p data-lang="en">This page was conceived as an institutional presentation addressed to the <strong>Bornito de Sousa Foundation</strong>, in recognition of its mission to promote dialogue, synergies, and best practices among academia, civil society, the public sector, and the private sector.</p>
+
+                <p data-lang="pt">Inspirado pelos valores de <em>excelência, solidariedade, transparência, perseverança e equidade</em>, este espaço visa partilhar a minha trajectória artística e tecnológica, bem como protótipos desenvolvidos a partir de uma <strong>abordagem sistémica transdisciplinar</strong>.</p>
+                <p data-lang="en">Inspired by the values of <em>excellence, solidarity, transparency, perseverance, and equity</em>, this space aims to share my artistic and technological trajectory, as well as prototypes developed from a <strong>transdisciplinary systems approach</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Identidade e Visão -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <section class="glass-card p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 gradient-text" data-lang="pt">Identidade e Trajectória</h3>
+                <h3 class="text-xl font-bold mb-4 gradient-text" data-lang="en">Identity and Trajectory</h3>
+                <p class="text-gray-400 mb-6" data-lang="pt">Licenciado em Música (ISART/FaArtes), compreendo a arte como um sistema de comunicação e mediação social.</p>
+                <p class="text-gray-400 mb-6" data-lang="en">Holding a degree in Music (ISART/FaArtes), I understand art as a system of communication and social mediation.</p>
+                <a href="#" class="btn-action px-6 py-3 rounded-full text-sm font-bold inline-flex items-center gap-2">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                    <span data-lang="pt">Ver Concerto</span><span data-lang="en">Watch Concert</span>
+                </a>
+            </section>
+
+            <section class="glass-card p-8 rounded-3xl">
+                <h3 class="text-xl font-bold mb-4 gradient-text" data-lang="pt">Visão Sistémica</h3>
+                <h3 class="text-xl font-bold mb-4 gradient-text" data-lang="en">Systems Vision</h3>
+                <p class="text-gray-400" data-lang="pt">Integração de arte, ciência e tecnologia como instrumentos complementares de transformação social no contexto africano.</p>
+                <p class="text-gray-400" data-lang="en">Integration of art, science, and technology as complementary instruments of social transformation in the African context.</p>
+            </section>
+        </div>
+
+        <!-- Portfólio de Protótipos -->
+        <h2 class="text-3xl font-bold text-center pt-10" data-lang="pt">Inovação e Impacto Social</h2>
+        <h2 class="text-3xl font-bold text-center pt-10" data-lang="en">Innovation and Social Impact</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Autismo -->
+            <div class="glass-card overflow-hidden rounded-3xl group">
+                <div class="h-48 bg-gradient-to-br from-blue-900 to-indigo-900 flex items-center justify-center">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M8 10h8"/><path d="M8 14h8"/></svg>
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold mb-3" data-lang="pt">Educação Inclusiva (Autismo)</h4>
+                    <h4 class="text-xl font-bold mb-3" data-lang="en">Inclusive Education (Autism)</h4>
+                    <p class="text-gray-400 text-sm mb-6" data-lang="pt">Plataforma digital com acessibilidade cognitiva para apoio ao Transtorno do Espectro do Autismo (TEA).</p>
+                    <p class="text-gray-400 text-sm mb-6" data-lang="en">Digital platform with cognitive accessibility to support Autism Spectrum Disorder (ASD).</p>
+                    <a href="#" class="text-yellow-500 font-bold text-sm hover:underline" data-lang="pt">Explorar App →</a>
+                    <a href="#" class="text-yellow-500 font-bold text-sm hover:underline" data-lang="en">Explore App →</a>
+                </div>
+            </div>
+
+            <!-- Astronomia/IA -->
+            <div class="glass-card overflow-hidden rounded-3xl group">
+                <div class="h-48 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center">
+                    <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" opacity="0.5"><circle cx="12" cy="12" r="3"/><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/></svg>
+                </div>
+                <div class="p-8">
+                    <h4 class="text-xl font-bold mb-3" data-lang="pt">Simulador Científico (IA)</h4>
+                    <h4 class="text-xl font-bold mb-3" data-lang="en">Scientific Simulator (AI)</h4>
+                    <p class="text-gray-400 text-sm mb-6" data-lang="pt">Visualização dinâmica do Sistema Solar integrando IA para aprendizagem significativa em astronomia.</p>
+                    <p class="text-gray-400 text-sm mb-6" data-lang="en">Dynamic Solar System visualization integrating AI for meaningful learning in astronomy.</p>
+                    <a href="#" class="text-yellow-500 font-bold text-sm hover:underline" data-lang="pt">Abrir Simulador →</a>
+                    <a href="#" class="text-yellow-500 font-bold text-sm hover:underline" data-lang="en">Open Simulator →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alinhamento Estratégico -->
+        <section class="bg-gradient-to-br from-yellow-500/10 to-orange-500/5 p-8 md:p-12 rounded-3xl border border-yellow-500/20">
+            <h3 class="text-2xl font-bold mb-6 text-center" data-lang="pt">Convergência Estratégica</h3>
+            <h3 class="text-2xl font-bold mb-6 text-center" data-lang="en">Strategic Convergence</h3>
+            <p class="text-center text-gray-300 max-w-3xl mx-auto" data-lang="pt">
+                Encontro-me disponível para colaborar em modelos de cooperação institucional que promovam conhecimento, inclusão, tecnologia responsável e valorização do capital humano angolano, em pleno alinhamento com a visão da <strong>Fundação Bornito de Sousa</strong>.
+            </p>
+            <p class="text-center text-gray-300 max-w-3xl mx-auto" data-lang="en">
+                I am available to collaborate in institutional cooperation models that promote knowledge, inclusion, responsible technology, and the development of Angolan human capital, in full alignment with the vision of the <strong>Bornito de Sousa Foundation</strong>.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="py-12 px-6 border-t border-white/5 text-center text-gray-500 text-sm">
+        <p>© 2025 — Dala Manico Lueji de Carvalho</p>
+        <p class="mt-2" data-lang="pt">Apresentação Estratégica • Luanda, Angola</p>
+        <p class="mt-2" data-lang="en">Strategic Presentation • Luanda, Angola</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            document.body.className = 'lang-' + lang;
+            
+            // Atualizar opacidade dos botões
+            document.getElementById('btn-pt').style.opacity = (lang === 'pt') ? '1' : '0.5';
+            document.getElementById('btn-en').style.opacity = (lang === 'en') ? '1' : '0.5';
+        }
+    </script>
+</body>
+</html>
